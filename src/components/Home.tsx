@@ -7,9 +7,44 @@ const Home = () => {
     <div className="relative bg-black">
       {/* Background Gradient SVG - Responsive */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
-        {/* Desktop SVG */}
+        {/* Ultra-Wide Desktop SVG (≥2xl) */}
         <div
-          className="hidden lg:block absolute"
+          className="hidden 2xl:block absolute"
+          style={{ top: "-40rem", right: "-10rem" }}
+        >
+          <svg
+            width="1600"
+            height="2000"
+            viewBox="0 0 1600 2000"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="opacity-90"
+          >
+            <g filter="url(#filter0_f_ultra)">
+              <path
+                d="M2400 900C2100 1050 700 1600 600 1450C650 1250 850 1350 1350 900C1600 650 1300 850 1400 -100C1470 100 2700 750 2400 900Z"
+                fill="#8A1DFF"
+              />
+            </g>
+            <defs>
+              <filter
+                id="filter0_f_ultra"
+                x="-1000"
+                y="-1000"
+                width="5000"
+                height="5000"
+                filterUnits="userSpaceOnUse"
+                colorInterpolationFilters="sRGB"
+              >
+                <feGaussianBlur stdDeviation="280" />
+              </filter>
+            </defs>
+          </svg>
+        </div>
+
+        {/* Desktop SVG (lg to xl only) */}
+        <div
+          className="hidden lg:block 2xl:hidden absolute"
           style={{ top: "-40rem", left: "20rem" }}
         >
           <svg
@@ -103,7 +138,6 @@ const Home = () => {
                 filterUnits="userSpaceOnUse"
                 colorInterpolationFilters="sRGB"
               >
-                {/* Big blur for smooth glow */}
                 <feGaussianBlur stdDeviation="360" />
               </filter>
             </defs>
@@ -140,7 +174,7 @@ const Home = () => {
             keeps the focus where it belongs: on the music.
           </p>
           <div className="pt-8">
-          <Button text="JOIN THE PARTY" scrollTo="events" />
+            <Button text="JOIN THE PARTY" scrollTo="events" />
           </div>
         </div>
 
