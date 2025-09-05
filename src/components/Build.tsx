@@ -38,25 +38,25 @@ const Build = () => {
             href="#"
             className="text-purple-400 hover:scale-110 transition-colors"
           >
-            <img src="/src/assets/instagram.svg" />
+            <img src="/instagram.svg" />
           </a>
           <a
             href="#"
             className="text-purple-400 hover:scale-110 transition-colors"
           >
-            <img src="/src/assets/linkedin.svg" />
+            <img src="/linkedin.svg" />
           </a>
           <a
             href="#"
             className="text-purple-400 hover:scale-110 transition-colors"
           >
-            <img src="/src/assets/tiktok.svg" />
+            <img src="/tiktok.svg" />
           </a>
           <a
             href="#"
             className="text-purple-400 hover:scale-110 transition-colors"
           >
-            <img src="/src/assets/soundcloud.svg" />
+            <img src="/SoundCloud.svg" />
           </a>
         </div>
       </div>
